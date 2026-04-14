@@ -29,11 +29,14 @@ jobs:
         # 여기서도 python -m으로 패키지를 인식하도록 시도하거나 직접 실행
         run: python scraper.py
 
-      - name: Commit and Push Changes
+- name: Commit and Push
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
           git add data.js
-          git commit -m "Update flight data $(date)" || echo "no changes"
-          git pull --rebase origin main  # <--- 이 줄을 추가해주세요!
-          git push origin HEAD:main
+          # 충돌 방지를 위해 원격 저장소의 최신 상태를 가져오되, 로컬(봇)의 data.js를 우선시함
+          git fetch origin main
+          git checkout origin/main data.js || true # 파일이 없어도 무시
+          git add data.js
+          git commit -m "Update flight data $(date)" || echo "No changes to commit"
+          git push origin main --force  # 강제로 밀어넣어 충돌 해결
