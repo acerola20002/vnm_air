@@ -7,13 +7,16 @@
 
     <style>
         body { background: #000; color: #ffcc00; font-family: sans-serif; padding: 10px; margin: 0; }
-        .header { text-align: center; margin-bottom: 20px; padding: 20px 10px; border-bottom: 1px solid #222; }
-        .update-tag { color: #888; font-size: 0.9em; margin-bottom: 10px; }
+        .header { text-align: center; margin-bottom: 20px; padding: 10px; border-bottom: 1px solid #222; }
+        .update-tag { color: #888; font-size: 0.85em; margin-bottom: 10px; }
+        
+        /* 주의사항 상단 배치 스타일 */
+        .notice-box { margin: 10px auto 20px; color: #bbb; font-size: 0.75em; line-height: 1.5; border: 1px solid #333; padding: 10px; max-width: 600px; background: #0a0a0a; }
 
         /* 도시 선택 버튼 스타일 */
         .city-container { display: flex; flex-direction: column; gap: 8px; margin-bottom: 20px; align-items: center; }
         .city-row { display: flex; gap: 8px; justify-content: center; width: 100%; max-width: 600px; }
-        .city-btn { flex: 1; padding: 12px 5px; font-size: 0.9em; cursor: pointer; background: #1a1a1a; border: 1px solid #333; color: #eee; border-radius: 4px; }
+        .city-btn { flex: 1; padding: 10px 2px; font-size: 0.85em; cursor: pointer; background: #1a1a1a; border: 1px solid #333; color: #eee; border-radius: 4px; }
         .city-btn.active { background: #ffcc00; color: #000; font-weight: bold; border-color: #ffcc00; }
 
         /* 출발/도착 탭 스타일 */
@@ -25,8 +28,8 @@
         th { background: #333; color: #fff; padding: 12px; font-size: 0.9em; }
         td { padding: 12px; border-bottom: 1px solid #222; text-align: center; font-size: 0.95em; }
         
-        .footer { margin-top: 30px; padding: 20px; text-align: center; border-top: 1px solid #222; }
-        .visitor-counter { margin-top: 15px; opacity: 0.8; }
+        .footer { margin-top: 30px; padding: 20px; text-align: center; }
+        .visitor-counter { margin-top: 10px; opacity: 0.8; }
     </style>
 </head>
 
@@ -36,6 +39,12 @@
     <h1>✈️ VIETNAM INTERNATIONAL</h1>
     <div id="update-notice" class="update-tag">데이터 로딩 중...</div>
     
+    <div class="notice-box">
+        ⚠️ 본 전광판은 FlightRadar24 데이터를 기반으로 제작되었습니다.<br>
+        데이터는 10분 간격으로 업데이트되나 현지 사정에 따라 차이가 날 수 있습니다.<br>
+        <strong>정확한 운항 정보는 반드시 해당 항공사 공식 홈페이지를 확인해 주세요.</strong>
+    </div>
+
     <div class="city-container">
         <div class="city-row">
             <button class="city-btn active" id="city-CXR" onclick="changeCity('CXR')">나트랑</button>
@@ -66,12 +75,6 @@
 </table>
 
 <div class="footer">
-    <div style="color:#bbb; font-size:0.8em; line-height:1.6; max-width:600px; margin: 0 auto;">
-        ⚠️ 본 전광판은 FlightRadar24 데이터를 기반으로 개인적인 여행 편의를 위해 제작되었습니다.<br>
-        데이터는 10분 간격으로 자동 업데이트되나 현지 사정에 따라 차이가 날 수 있습니다.<br>
-        <strong>정확한 운항 정보는 반드시 해당 항공사 공식 홈페이지를 확인해 주세요.</strong>
-    </div>
-    
     <div class="visitor-counter">
         <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Facerola20002.github.io%2Fvnm_air%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false" alt="방문자수"/>
     </div>
@@ -81,7 +84,7 @@
     let currentCity = 'CXR';
     let currentType = '도착';
 
-    // 1. 캐시 방지 데이터 로드
+    // 캐시 방지 데이터 로드
     const script = document.createElement("script");
     script.src = `data.js?v=${Date.now()}`;
     document.head.appendChild(script);
@@ -96,7 +99,6 @@
         }
     };
 
-    // 도시 변경 함수
     function changeCity(code) {
         currentCity = code;
         document.querySelectorAll('.city-btn').forEach(b => b.classList.remove('active'));
@@ -104,7 +106,6 @@
         renderData();
     }
 
-    // 도착/출발 탭 변경 함수
     function changeType(type) {
         currentType = type;
         document.getElementById('btn-arr').classList.toggle('active', type === '도착');
@@ -112,17 +113,18 @@
         renderData();
     }
 
-    // 실제 테이블 그리기
     function renderData() {
         const tbody = document.getElementById('table-body');
         tbody.innerHTML = '';
 
-        // allData 객체에서 해당 도시의 데이터를 가져옴
+        // 중요: flightInfo.data가 아니라 flightInfo.allData[currentCity]를 참조합니다.
+        if (!flightInfo || !flightInfo.allData) return;
+        
         const cityData = flightInfo.allData[currentCity] || [];
         const filtered = cityData.filter(f => f.type === currentType);
 
         if (filtered.length === 0) {
-            tbody.innerHTML = '<tr><td colspan="4" style="color:#666; padding:40px;">해당 시간대 운항 정보가 없습니다.</td></tr>';
+            tbody.innerHTML = '<tr><td colspan="4" style="color:#666; padding:40px;">데이터가 없거나 로딩 중입니다.</td></tr>';
             return;
         }
 
@@ -142,7 +144,6 @@
         });
     }
 
-    // 5분마다 페이지 새로고침
     setInterval(() => { location.reload(); }, 300000);
 </script>
 
