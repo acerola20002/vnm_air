@@ -74,9 +74,12 @@
 </table>
 
 <div class="footer">
-    <div class="visitor-counter" style="text-align: center; margin-top: 20px;">
-        <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://acerola20002.github.io/vnm_air_check" alt="방문자수">
-    </div>
+    <div class="visitor-counter" id="counter" style="text-align: center; margin-top: 20px;"></div>
+
+    <script>
+    document.getElementById("counter").innerHTML =
+      `<img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https://acerola20002.github.io/vnm_air_check/&v=${Date.now()}" alt="방문자수">`;
+    </script>
 </div>
 
 <script>
