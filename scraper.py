@@ -55,7 +55,7 @@ def update_data():
         now_vn = datetime.datetime.now(datetime.timezone.utc) + datetime.timedelta(hours=7)
         now_vn_naive = now_vn.replace(tzinfo=None)
         
-        all_storage = {} # 7개 공항 데이터를 담을 그릇
+        all_storage = {} # 6개 공항 데이터를 담을 그릇
 
         for code, kor_name in TARGET_AIRPORTS.items():
             print(f"📡 {kor_name}({code}) 데이터 수집 중...")
@@ -75,7 +75,12 @@ def update_data():
                     iata_code = airport_data.get('code', {}).get('iata', '')
                     city_raw = airport_data.get('position', {}).get('region', {}).get('city', 'Unknown')
 
-                    if city_raw in DOMESTIC_CITIES: continue
+                    # --- [이 부분을 수정 및 추가하세요] ---
+                    # 1. 도시 이름이 국내선 리스트에 있거나
+                    # 2. 출발(departures)인데 목적지 IATA 코드가 우리가 관리하는 베트남 공항이면 제외
+                    if city_raw in DOMESTIC_CITIES or (mode == 'departures' and iata_code in TARGET_AIRPORTS):
+                        continue
+                    # ---------------------------------------
 
                     display_city = CITY_MAP.get(city_raw, city_raw)
                     if iata_code == "MFM" or "Macau" in city_raw: display_city = "마카오"
