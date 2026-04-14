@@ -5,14 +5,13 @@ from FlightRadar24 import FlightRadar24API
 
 fr_api = FlightRadar24API()
 
-# 대상 공항 리스트 (7개)
+# 대상 공항 리스트 (6개)
 TARGET_AIRPORTS = {
     "CXR": "나트랑",
     "PQC": "푸꾸옥",
     "DAD": "다낭",
     "SGN": "호치민",
     "HAN": "하노이",
-    "DLI": "달랏",
     "HPH": "하이퐁"
 }
 
