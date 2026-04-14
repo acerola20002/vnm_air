@@ -94,14 +94,27 @@ def update_data():
                     date_str = f_time_vn_naive.strftime('%m/%d %H:%M')
                     raw_status = flight_info.get('status', {}).get('text', '')
 
+                    # 이렇게 하면 '지연' 정보가 기본적으로 kor_status에 담깁니다.
+                    kor_status = translate_status(raw_status)
+
+                    # 2. 만약 출발(departures) 모드라면, 시간에 따라 상태를 더 세분화합니다.
                     if mode == 'departures':
                         diff_min = (f_time_vn_naive - now_vn_naive).total_seconds() / 60
-                        if diff_min <= 0: kor_status = "출발완료"
-                        elif diff_min <= 10: kor_status = "탑승중"
-                        elif diff_min <= 30: kor_status = "곧 출발"
-                        else: kor_status = "출발예정"
-                    else:
-                        kor_status = translate_status(raw_status)
+                        
+                        # 지연 정보가 없을 때만 시간 기반 상태(탑승중 등)를 보여줍니다.
+                        # 만약 지연 정보가 있다면 '지연' 상태를 유지하는 게 안전합니다.
+                        if "지연" not in kor_status:
+                            if diff_min <= 0: 
+                                kor_status = "출발완료"
+                            elif diff_min <= 15: 
+                                kor_status = "탑승마감"
+                            elif diff_min <= 45: 
+                                kor_status = "탑승중"
+                            else: 
+                                kor_status = "출발예정"
+                    
+                    # 3. 도착(arrivals)은 위에서 만든 kor_status를 그대로 사용하게 됩니다.
+                    # (별도의 if문이 없으므로 자연스럽게 translate_status 결과값이 유지됨)
 
                     airport_storage.append({
                         "type": "도착" if mode == 'arrivals' else "출발",
