@@ -1,0 +1,39 @@
+name: Update Flight Data
+
+on:
+  schedule:
+    - cron: '*/10 * * * *'
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: |
+         python -m pip install --upgrade pip
+         pip install FlightRadarAPI beautifulsoup4
+
+      - name: Run Scraper
+        # 여기서도 python -m으로 패키지를 인식하도록 시도하거나 직접 실행
+        run: python scraper.py
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.email "action@github.com"
+          git config --global user.name "GitHub Action"
+          git add data.js
+          git commit -m "Update flight data $(date)" || echo "no changes"
+          git pull --rebase origin main  # <--- 이 줄을 추가해주세요!
+          git push origin HEAD:main
