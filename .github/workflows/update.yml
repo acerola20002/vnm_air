@@ -33,10 +33,15 @@ jobs:
         run: |
           git config --global user.email "action@github.com"
           git config --global user.name "GitHub Action"
-          git add data.js
-          # 충돌 방지를 위해 원격 저장소의 최신 상태를 가져오되, 로컬(봇)의 data.js를 우선시함
+          
+          # 1. 원격의 최신 상태를 일단 가져옴 (충돌 방지 밑작업)
           git fetch origin main
-          git checkout origin/main data.js || true # 파일이 없어도 무시
+          
+          # 2. 내(봇)가 만든 data.js를 강제로 스테이징
           git add data.js
+          
+          # 3. 커밋 (변경사항 없으면 통과)
           git commit -m "Update flight data $(date)" || echo "No changes to commit"
-          git push origin main --force  # 강제로 밀어넣어 충돌 해결
+          
+          # 4. 강제로 밀어넣기 (Force Push) - 충돌 해결의 핵심
+          git push origin main --force
