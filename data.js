@@ -1,30 +1,14 @@
 const flightInfo = {
-    "lastUpdate": "2026-04-14 13:30:25",
-    "version": 1776173425,
+    "lastUpdate": "2026-04-14 13:40:10",
+    "version": 1776174010,
     "data": [
-        {
-            "type": "도착",
-            "time": "04/14 13:30",
-            "timestamp": 1776148200,
-            "flight": "VZ968",
-            "city": "방콕",
-            "status": "지연 (14:00)"
-        },
-        {
-            "type": "도착",
-            "time": "04/14 13:35",
-            "timestamp": 1776148500,
-            "flight": "VJ919",
-            "city": "부산",
-            "status": "도착완료"
-        },
         {
             "type": "도착",
             "time": "04/14 14:10",
             "timestamp": 1776150600,
             "flight": "SU598",
             "city": "Moscow",
-            "status": "도착예정 (13:53)"
+            "status": "도착예정 (14:00)"
         },
         {
             "type": "출발",
@@ -40,7 +24,7 @@ const flightInfo = {
             "timestamp": 1776153300,
             "flight": "WZ3201",
             "city": "Moscow",
-            "status": "도착예정 (14:38)"
+            "status": "도착예정 (14:36)"
         },
         {
             "type": "도착",
@@ -56,7 +40,7 @@ const flightInfo = {
             "timestamp": 1776155400,
             "flight": "B2795",
             "city": "Minsk",
-            "status": "도착예정 (15:12)"
+            "status": "도착예정 (15:10)"
         },
         {
             "type": "출발",
