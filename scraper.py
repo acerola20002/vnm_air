@@ -107,7 +107,7 @@ def update_data():
                             if diff_min <= 0: 
                                 kor_status = "출발완료"
                             elif diff_min <= 15: 
-                                kor_status = "탑승마감"
+                                kor_status = "탑승 곧 마감"
                             elif diff_min <= 45: 
                                 kor_status = "탑승중"
                             else: 
