@@ -1,15 +1,7 @@
 const flightInfo = {
-    "lastUpdate": "2026-04-15 02:50:19",
+    "lastUpdate": "2026-04-15 02:51:01",
     "allData": {
         "CXR": [
-            {
-                "type": "출발",
-                "time": "04/15 02:50",
-                "timestamp": 1776196200,
-                "flight": "SU833",
-                "city": "Vladivostok",
-                "status": "출발완료"
-            },
             {
                 "type": "도착",
                 "time": "04/15 08:30",
@@ -1690,14 +1682,6 @@ const flightInfo = {
         "SGN": [
             {
                 "type": "출발",
-                "time": "04/15 02:50",
-                "timestamp": 1776196200,
-                "flight": "ZH118",
-                "city": "Shenzhen",
-                "status": "출발완료"
-            },
-            {
-                "type": "출발",
                 "time": "04/15 03:30",
                 "timestamp": 1776198600,
                 "flight": "T5652",
@@ -2209,6 +2193,14 @@ const flightInfo = {
                 "status": "출발예정"
             },
             {
+                "type": "출발",
+                "time": "04/15 10:10",
+                "timestamp": 1776222600,
+                "flight": "VN641",
+                "city": "Denpasar",
+                "status": "출발예정"
+            },
+            {
                 "type": "도착",
                 "time": "04/15 10:15",
                 "timestamp": 1776222900,
@@ -2322,22 +2314,6 @@ const flightInfo = {
             }
         ],
         "HAN": [
-            {
-                "type": "출발",
-                "time": "04/15 02:50",
-                "timestamp": 1776196200,
-                "flight": "SC4650",
-                "city": "Qingdao",
-                "status": "출발완료"
-            },
-            {
-                "type": "출발",
-                "time": "04/15 02:50",
-                "timestamp": 1776196200,
-                "flight": "CA708",
-                "city": "Hangzhou",
-                "status": "출발완료"
-            },
             {
                 "type": "도착",
                 "time": "04/15 03:05",
