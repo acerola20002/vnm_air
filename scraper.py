@@ -29,7 +29,7 @@ IATA_MAP = {
 
 DOMESTIC_CITIES = [
     "Ho Chi Minh City", "Hanoi", "Da Nang", "Dalat", "Hai Phong",
-    "Can Tho", "Phu Quoc", "Vinh", "Hue", "Tuy Hoa"
+    "Can Tho", "Phu Quoc", "Vinh", "Hue", "Tuy Hoa", "Qui Nhon", "Chu Lai"
 ]
 
 def translate_status(raw_text):
