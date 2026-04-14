@@ -73,7 +73,23 @@
     <tbody id="table-body"></tbody>
 </table>
 
+<div class="footer" style="text-align: center; margin-top: 20px; color: #666; font-size: 14px;">
+    <span>오늘의 방문 횟수: </span>
+    <span id="stats-count">불러오는 중...</span>
+</div>
 
+<script>
+    // GoatCounter에서 내 사이트의 조회수를 텍스트로 가져오는 기능입니다.
+    // '사용자아이디' 부분만 본인의 Account name으로 바꿔주세요!
+    fetch('https://acerola2002.goatcounter.com/counter/TOTAL.json')
+        .then(response => response.json())
+        .then(data => {
+            document.getElementById('stats-count').innerText = data.count;
+        })
+        .catch(err => {
+            document.getElementById('stats-count').innerText = '확인 중';
+        });
+</script>
 
 <script>
     let currentCity = 'CXR';
