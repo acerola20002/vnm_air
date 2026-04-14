@@ -102,8 +102,10 @@
 
     script.onload = function() {
         if (typeof flightInfo !== 'undefined') {
-            document.getElementById('update-notice').innerText =
-                `※ 현지 시간 기준 / 마지막 업데이트: ${flightInfo.lastUpdate}`;
+            // innerHTML을 사용하여 두 줄로 표시하고 강조 문구를 추가합니다.
+            document.getElementById('update-notice').innerHTML = 
+                `※ 마지막 업데이트: ${flightInfo.lastUpdate}<br>` +
+                `<span style="color: #ff4757; font-weight: bold;">(표시된 모든 시간은 베트남 현지 기준입니다)</span>`;
             renderData();
         } else {
             document.getElementById('update-notice').innerText = "데이터를 불러오지 못했습니다.";
