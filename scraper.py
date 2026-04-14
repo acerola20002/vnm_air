@@ -74,8 +74,28 @@ def update_data():
                     airport_data = flight_info.get('airport', {}).get(port_type, {})
                     iata_code = airport_data.get('code', {}).get('iata', '')
                     city_raw = airport_data.get('position', {}).get('region', {}).get('city', 'Unknown')
+                    # 국가 정보 추가
+                    country_raw = airport_data.get('position', {}).get('country', {}).get('name', 'Unknown')
 
-                    # --- [이 부분을 수정 및 추가하세요] ---
+                    # [통합 필터 로직] 
+                    # 1. 국가가 베트남(Vietnam)이면 무조건 제외 (가장 확실함)
+                    # 2. 혹은 IATA 코드가 우리가 관리하는 베트남 6개 공항 리스트에 있으면 제외
+                    # 3. 혹은 도시 이름이 DOMESTIC_CITIES 리스트에 있으면 제외
+                    if country_raw == "Vietnam" or iata_code in TARGET_AIRPORTS or city_raw in DOMESTIC_CITIES:
+                        continue
+
+                    # --- 위 필터를 통과한 '진짜 국제선'만 아래 로직을 탑니다 ---
+                    display_city = CITY_MAP.get(city_raw, city_raw)
+                    if iata_code == "MFM" or "Macau" in city_raw: display_city = "마카오"
+                    elif iata_code == "HKG" or "Hong Kong" in city_raw: display_city = "홍콩"
+                    elif iata_code in IATA_MAP: display_city = IATA_MAP[iata_code]
+
+                    t_val = get_time_value(flight_info, mode)
+                    if not t_val: continue
+                    # 위 필터를 통과했다면 이제 '외국' 공항만 남았습니다.
+                    display_city = CITY_MAP.get(city_raw, city_raw)
+                    # ... 이후 한글 변환 로직 그대로 유지
+                   
                     # 1. 도시 이름이 국내선 리스트에 있거나
                     # 2. 출발(departures)인데 목적지 IATA 코드가 우리가 관리하는 베트남 공항이면 제외
                     if city_raw in DOMESTIC_CITIES or (mode == 'departures' and iata_code in TARGET_AIRPORTS):
