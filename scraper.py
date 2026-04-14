@@ -28,7 +28,7 @@ IATA_MAP = {
 }
 
 DOMESTIC_CITIES = [
-    "Ho Chi Minh City", "Hanoi", "Da Nang", "Dalat", "Hai Phong",
+    "Ho Chi Minh City", "Hanoi", "Da Nang", "Dalat", "Hai Phong", "Dong Hoi",
     "Can Tho", "Phu Quoc", "Vinh", "Hue", "Tuy Hoa", "Qui Nhon", "Chu Lai"
 ]
 
