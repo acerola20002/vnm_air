@@ -1,22 +1,14 @@
 const flightInfo = {
-    "lastUpdate": "2026-07-04 02:43:09",
+    "lastUpdate": "2026-07-04 03:44:10",
     "allData": {
         "CXR": [
-            {
-                "type": "출발",
-                "time": "07/04 03:10",
-                "timestamp": 1783109400,
-                "flight": "VJ918",
-                "city": "부산",
-                "status": "탑승중"
-            },
             {
                 "type": "도착",
                 "time": "07/04 04:00",
                 "timestamp": 1783112400,
                 "flight": "SU830",
                 "city": "Novosibirsk",
-                "status": "도착예정 (03:28)"
+                "status": "도착완료"
             },
             {
                 "type": "출발",
@@ -40,7 +32,7 @@ const flightInfo = {
                 "timestamp": 1783125000,
                 "flight": "KC193",
                 "city": "Almaty",
-                "status": "도착예정 (07:08)"
+                "status": "도착예정 (07:04)"
             },
             {
                 "type": "출발",
@@ -56,7 +48,7 @@ const flightInfo = {
                 "timestamp": 1783128300,
                 "flight": "SU836",
                 "city": "Yekaterinburg",
-                "status": "도착예정 (07:36)"
+                "status": "도착예정 (07:29)"
             },
             {
                 "type": "출발",
@@ -72,7 +64,7 @@ const flightInfo = {
                 "timestamp": 1783132200,
                 "flight": "SU294",
                 "city": "Moscow",
-                "status": "도착예정 (09:16)"
+                "status": "도착예정 (09:25)"
             },
             {
                 "type": "도착",
@@ -1144,14 +1136,6 @@ const flightInfo = {
         "DAD": [
             {
                 "type": "도착",
-                "time": "07/04 03:15",
-                "timestamp": 1783109700,
-                "flight": "VN433",
-                "city": "인천",
-                "status": "도착예정 (03:07)"
-            },
-            {
-                "type": "도착",
                 "time": "07/04 07:30",
                 "timestamp": 1783125000,
                 "flight": "5J5758",
@@ -1164,7 +1148,7 @@ const flightInfo = {
                 "timestamp": 1783128300,
                 "flight": "KC259",
                 "city": "Astana",
-                "status": "지연 (08:59)"
+                "status": "지연 (08:46)"
             },
             {
                 "type": "출발",
@@ -1621,24 +1605,24 @@ const flightInfo = {
                 "flight": "UO558",
                 "city": "홍콩",
                 "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/04 17:30",
+                "timestamp": 1783161000,
+                "flight": "TR518",
+                "city": "Singapore",
+                "status": "예정"
             }
         ],
         "SGN": [
-            {
-                "type": "출발",
-                "time": "07/04 02:50",
-                "timestamp": 1783108200,
-                "flight": "ZH118",
-                "city": "Shenzhen",
-                "status": "탑승 곧 마감"
-            },
             {
                 "type": "도착",
                 "time": "07/04 04:10",
                 "timestamp": 1783113000,
                 "flight": "VJ3909",
                 "city": "Guangzhou",
-                "status": "지연 (04:41)"
+                "status": "지연 (04:39)"
             },
             {
                 "type": "도착",
@@ -1654,7 +1638,7 @@ const flightInfo = {
                 "timestamp": 1783114200,
                 "flight": "VN99",
                 "city": "San Francisco",
-                "status": "도착예정 (04:15)"
+                "status": "도착예정 (04:13)"
             },
             {
                 "type": "도착",
@@ -1662,7 +1646,7 @@ const flightInfo = {
                 "timestamp": 1783114500,
                 "flight": "VJ859",
                 "city": "Manila",
-                "status": "도착예정 (04:28)"
+                "status": "도착예정 (04:26)"
             },
             {
                 "type": "도착",
@@ -1670,7 +1654,7 @@ const flightInfo = {
                 "timestamp": 1783114800,
                 "flight": "MU2839",
                 "city": "Nanjing",
-                "status": "도착예정 (04:41)"
+                "status": "도착예정 (04:43)"
             },
             {
                 "type": "도착",
@@ -1678,7 +1662,7 @@ const flightInfo = {
                 "timestamp": 1783115400,
                 "flight": "VN10",
                 "city": "Paris",
-                "status": "도착예정 (04:13)"
+                "status": "도착예정 (04:12)"
             },
             {
                 "type": "도착",
@@ -1686,7 +1670,7 @@ const flightInfo = {
                 "timestamp": 1783116000,
                 "flight": "VJ84",
                 "city": "Brisbane",
-                "status": "지연 (05:17)"
+                "status": "지연 (05:19)"
             },
             {
                 "type": "도착",
@@ -1694,7 +1678,7 @@ const flightInfo = {
                 "timestamp": 1783116000,
                 "flight": "VJ3949",
                 "city": "Beijing",
-                "status": "도착예정 (05:09)"
+                "status": "지연 (05:17)"
             },
             {
                 "type": "출발",
@@ -1718,7 +1702,7 @@ const flightInfo = {
                 "timestamp": 1783117500,
                 "flight": "JL79",
                 "city": "Tokyo",
-                "status": "도착예정 (05:34)"
+                "status": "도착예정 (05:30)"
             },
             {
                 "type": "도착",
@@ -1726,7 +1710,7 @@ const flightInfo = {
                 "timestamp": 1783117500,
                 "flight": "VJ3901",
                 "city": "상하이",
-                "status": "지연 (06:06)"
+                "status": "지연 (06:02)"
             },
             {
                 "type": "도착",
@@ -1742,7 +1726,7 @@ const flightInfo = {
                 "timestamp": 1783119600,
                 "flight": "VJ1802",
                 "city": "Bengaluru",
-                "status": "지연 (06:23)"
+                "status": "지연 (06:25)"
             },
             {
                 "type": "도착",
@@ -1750,7 +1734,7 @@ const flightInfo = {
                 "timestamp": 1783119600,
                 "flight": "VN978",
                 "city": "Mumbai",
-                "status": "도착예정 (05:30)"
+                "status": "도착예정 (05:28)"
             },
             {
                 "type": "도착",
@@ -1758,7 +1742,7 @@ const flightInfo = {
                 "timestamp": 1783119900,
                 "flight": "VJ82",
                 "city": "Melbourne",
-                "status": "지연 (06:28)"
+                "status": "지연 (06:30)"
             },
             {
                 "type": "도착",
@@ -1766,7 +1750,7 @@ const flightInfo = {
                 "timestamp": 1783120200,
                 "flight": "VJ821",
                 "city": "Tokyo",
-                "status": "도착예정 (06:08)"
+                "status": "도착예정 (06:04)"
             },
             {
                 "type": "출발",
@@ -1790,7 +1774,7 @@ const flightInfo = {
                 "timestamp": 1783121400,
                 "flight": "VJ1806",
                 "city": "Ahmedabad",
-                "status": "지연 (07:21)"
+                "status": "지연 (07:25)"
             },
             {
                 "type": "도착",
@@ -1798,7 +1782,7 @@ const flightInfo = {
                 "timestamp": 1783121700,
                 "flight": "VJ896",
                 "city": "Delhi",
-                "status": "지연 (07:23)"
+                "status": "지연 (07:25)"
             },
             {
                 "type": "도착",
@@ -1806,7 +1790,7 @@ const flightInfo = {
                 "timestamp": 1783122900,
                 "flight": "TK6228",
                 "city": "Istanbul",
-                "status": "지연 (07:25)"
+                "status": "지연 (07:34)"
             },
             {
                 "type": "출발",
@@ -2014,7 +1998,7 @@ const flightInfo = {
                 "timestamp": 1783129800,
                 "flight": "SU292",
                 "city": "Moscow",
-                "status": "지연 (09:50)"
+                "status": "지연 (09:57)"
             },
             {
                 "type": "출발",
@@ -2172,51 +2156,11 @@ const flightInfo = {
         "HAN": [
             {
                 "type": "출발",
-                "time": "07/04 02:45",
-                "timestamp": 1783107900,
-                "flight": "KJ372",
-                "city": "인천",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "출발",
-                "time": "07/04 02:50",
-                "timestamp": 1783108200,
-                "flight": "CA708",
-                "city": "Hangzhou",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "도착",
-                "time": "07/04 03:05",
-                "timestamp": 1783109100,
-                "flight": "VJ7527",
-                "city": "Guangzhou",
-                "status": "지연 (03:54)"
-            },
-            {
-                "type": "도착",
-                "time": "07/04 03:10",
-                "timestamp": 1783109400,
-                "flight": "CV7625",
-                "city": "Luxembourg",
-                "status": "지연 (04:13)"
-            },
-            {
-                "type": "도착",
-                "time": "07/04 03:35",
-                "timestamp": 1783110900,
-                "flight": "KJ5134",
-                "city": "인천",
-                "status": "예정"
-            },
-            {
-                "type": "출발",
                 "time": "07/04 03:50",
                 "timestamp": 1783111800,
                 "flight": "VN83",
                 "city": "Amsterdam",
-                "status": "출발예정"
+                "status": "탑승 곧 마감"
             },
             {
                 "type": "도착",
@@ -2248,7 +2192,7 @@ const flightInfo = {
                 "timestamp": 1783113600,
                 "flight": "KJ951",
                 "city": "홍콩",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -2256,7 +2200,7 @@ const flightInfo = {
                 "timestamp": 1783113600,
                 "flight": "KJ952",
                 "city": "홍콩",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -2280,7 +2224,7 @@ const flightInfo = {
                 "timestamp": 1783115100,
                 "flight": "QR8954",
                 "city": "Doha",
-                "status": "도착예정 (04:37)"
+                "status": "도착예정 (04:34)"
             },
             {
                 "type": "도착",
@@ -2288,7 +2232,7 @@ const flightInfo = {
                 "timestamp": 1783115100,
                 "flight": "VN72",
                 "city": "Milan",
-                "status": "도착예정 (04:15)"
+                "status": "도착예정 (04:17)"
             },
             {
                 "type": "도착",
@@ -2296,7 +2240,7 @@ const flightInfo = {
                 "timestamp": 1783115400,
                 "flight": "VJ7239",
                 "city": "상하이",
-                "status": "도착예정 (05:02)"
+                "status": "도착예정 (05:00)"
             },
             {
                 "type": "도착",
@@ -2320,7 +2264,7 @@ const flightInfo = {
                 "timestamp": 1783117200,
                 "flight": "VN62",
                 "city": "Moscow",
-                "status": "도착예정 (05:00)"
+                "status": "도착예정 (05:04)"
             },
             {
                 "type": "도착",
@@ -2328,7 +2272,7 @@ const flightInfo = {
                 "timestamp": 1783117500,
                 "flight": "VN984",
                 "city": "Hyderabad",
-                "status": "도착예정 (05:00)"
+                "status": "도착예정 (04:58)"
             },
             {
                 "type": "도착",
@@ -2336,7 +2280,7 @@ const flightInfo = {
                 "timestamp": 1783117500,
                 "flight": "VN980",
                 "city": "Delhi",
-                "status": "도착예정 (05:04)"
+                "status": "도착예정 (05:02)"
             },
             {
                 "type": "도착",
@@ -2360,7 +2304,7 @@ const flightInfo = {
                 "timestamp": 1783119300,
                 "flight": "VN634",
                 "city": "Jakarta",
-                "status": "예정"
+                "status": "지연 (06:40)"
             },
             {
                 "type": "도착",
@@ -2368,7 +2312,7 @@ const flightInfo = {
                 "timestamp": 1783119600,
                 "flight": "FX9001",
                 "city": "Anchorage",
-                "status": "지연 (07:10)"
+                "status": "지연 (07:02)"
             },
             {
                 "type": "도착",
@@ -2376,7 +2320,7 @@ const flightInfo = {
                 "timestamp": 1783119900,
                 "flight": "EY971",
                 "city": "Abu Dhabi",
-                "status": "도착예정 (05:34)"
+                "status": "도착예정 (05:32)"
             },
             {
                 "type": "도착",
@@ -2384,7 +2328,7 @@ const flightInfo = {
                 "timestamp": 1783119900,
                 "flight": "VN36",
                 "city": "Frankfurt",
-                "status": "도착예정 (05:30)"
+                "status": "도착예정 (05:24)"
             },
             {
                 "type": "도착",
@@ -2392,7 +2336,7 @@ const flightInfo = {
                 "timestamp": 1783122000,
                 "flight": "EY432",
                 "city": "Abu Dhabi",
-                "status": "도착예정 (06:55)"
+                "status": "도착예정 (06:51)"
             },
             {
                 "type": "도착",
@@ -2400,7 +2344,7 @@ const flightInfo = {
                 "timestamp": 1783122000,
                 "flight": "VN18",
                 "city": "Paris",
-                "status": "도착예정 (06:21)"
+                "status": "도착예정 (06:19)"
             },
             {
                 "type": "출발",
@@ -2409,6 +2353,14 @@ const flightInfo = {
                 "flight": "QR8955",
                 "city": "Doha",
                 "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/04 06:50",
+                "timestamp": 1783122600,
+                "flight": "RH9458",
+                "city": "Delhi",
+                "status": "Diverted to HKG"
             },
             {
                 "type": "출발",
@@ -2424,7 +2376,7 @@ const flightInfo = {
                 "timestamp": 1783123800,
                 "flight": "VJ910",
                 "city": "Mumbai",
-                "status": "도착예정 (07:02)"
+                "status": "도착예정 (07:04)"
             },
             {
                 "type": "도착",
@@ -2440,7 +2392,7 @@ const flightInfo = {
                 "timestamp": 1783124400,
                 "flight": "AI2390",
                 "city": "Delhi",
-                "status": "예정"
+                "status": "도착예정 (07:21)"
             },
             {
                 "type": "출발",
@@ -2480,7 +2432,7 @@ const flightInfo = {
                 "timestamp": 1783125900,
                 "flight": "QR8950",
                 "city": "Doha",
-                "status": "도착예정 (07:42)"
+                "status": "도착예정 (07:51)"
             },
             {
                 "type": "출발",
@@ -2800,6 +2752,14 @@ const flightInfo = {
                 "timestamp": 1783140300,
                 "flight": "VJ959",
                 "city": "Fukuoka",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/04 11:50",
+                "timestamp": 1783140600,
+                "flight": "FD640",
+                "city": "방콕",
                 "status": "예정"
             }
         ],
