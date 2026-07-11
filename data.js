@@ -1,54 +1,14 @@
 const flightInfo = {
-    "lastUpdate": "2026-07-11 15:08:26",
+    "lastUpdate": "2026-07-11 16:45:29",
     "allData": {
         "CXR": [
-            {
-                "type": "도착",
-                "time": "07/11 15:10",
-                "timestamp": 1783757400,
-                "flight": "CZ6049",
-                "city": "Guangzhou",
-                "status": "도착완료"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:30",
-                "timestamp": 1783758600,
-                "flight": "B2795",
-                "city": "Minsk",
-                "status": "도착예정 (15:36)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "WZ3202",
-                "city": "Moscow",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:00",
-                "timestamp": 1783760400,
-                "flight": "CZ6050",
-                "city": "Guangzhou",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "SU299",
-                "city": "Moscow",
-                "status": "출발예정"
-            },
             {
                 "type": "도착",
                 "time": "07/11 16:55",
                 "timestamp": 1783763700,
                 "flight": "IO995",
                 "city": "Hefei",
-                "status": "도착예정 (16:50)"
+                "status": "도착예정 (16:51)"
             },
             {
                 "type": "출발",
@@ -56,7 +16,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "B2796",
                 "city": "Minsk",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -72,7 +32,7 @@ const flightInfo = {
                 "timestamp": 1783776000,
                 "flight": "BX787",
                 "city": "인천",
-                "status": "예정"
+                "status": "도착예정 (19:56)"
             },
             {
                 "type": "도착",
@@ -80,7 +40,7 @@ const flightInfo = {
                 "timestamp": 1783779000,
                 "flight": "SU832",
                 "city": "Vladivostok",
-                "status": "도착예정 (19:58)"
+                "status": "도착예정 (20:15)"
             },
             {
                 "type": "출발",
@@ -563,6 +523,14 @@ const flightInfo = {
                 "status": "출발예정"
             },
             {
+                "type": "도착",
+                "time": "07/12 23:05",
+                "timestamp": 1783872300,
+                "flight": "KE467",
+                "city": "인천",
+                "status": "예정"
+            },
+            {
                 "type": "출발",
                 "time": "07/12 23:15",
                 "timestamp": 1783872900,
@@ -593,48 +561,72 @@ const flightInfo = {
                 "flight": "EO3660",
                 "city": "Irkutsk",
                 "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/12 23:55",
+                "timestamp": 1783875300,
+                "flight": "ZE561",
+                "city": "인천",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 00:05",
+                "timestamp": 1783875900,
+                "flight": "RS528",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 00:20",
+                "timestamp": 1783876800,
+                "flight": "KE468",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/13 00:35",
+                "timestamp": 1783877700,
+                "flight": "7C2303",
+                "city": "인천",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 01:10",
+                "timestamp": 1783879800,
+                "flight": "ZE562",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 01:35",
+                "timestamp": 1783881300,
+                "flight": "7C2304",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 03:10",
+                "timestamp": 1783887000,
+                "flight": "VJ918",
+                "city": "부산",
+                "status": "출발예정"
             }
         ],
         "PQC": [
-            {
-                "type": "출발",
-                "time": "07/11 15:25",
-                "timestamp": 1783758300,
-                "flight": "K6831",
-                "city": "Phnom Penh",
-                "status": "탑승중"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:30",
-                "timestamp": 1783758600,
-                "flight": "AK547",
-                "city": "Kuala Lumpur",
-                "status": "도착예정 (15:34)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:55",
-                "timestamp": 1783760100,
-                "flight": "VZ982",
-                "city": "방콕",
-                "status": "도착예정 (15:38)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:00",
-                "timestamp": 1783760400,
-                "flight": "AK548",
-                "city": "Kuala Lumpur",
-                "status": "출발예정"
-            },
             {
                 "type": "출발",
                 "time": "07/11 16:45",
                 "timestamp": 1783763100,
                 "flight": "VZ983",
                 "city": "방콕",
-                "status": "출발예정"
+                "status": "출발완료"
             },
             {
                 "type": "도착",
@@ -650,7 +642,7 @@ const flightInfo = {
                 "timestamp": 1783764000,
                 "flight": "FD662",
                 "city": "방콕",
-                "status": "예정"
+                "status": "도착완료"
             },
             {
                 "type": "출발",
@@ -658,7 +650,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "FD663",
                 "city": "방콕",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "도착",
@@ -666,7 +658,7 @@ const flightInfo = {
                 "timestamp": 1783766400,
                 "flight": "TR524",
                 "city": "Singapore",
-                "status": "예정"
+                "status": "도착예정 (17:25)"
             },
             {
                 "type": "도착",
@@ -698,7 +690,7 @@ const flightInfo = {
                 "timestamp": 1783769700,
                 "flight": "9G501",
                 "city": "홍콩",
-                "status": "예정"
+                "status": "도착예정 (18:24)"
             },
             {
                 "type": "출발",
@@ -730,7 +722,7 @@ const flightInfo = {
                 "timestamp": 1783779900,
                 "flight": "7C2315",
                 "city": "인천",
-                "status": "예정"
+                "status": "도착예정 (21:06)"
             },
             {
                 "type": "도착",
@@ -1053,6 +1045,22 @@ const flightInfo = {
                 "status": "예정"
             },
             {
+                "type": "출발",
+                "time": "07/12 22:00",
+                "timestamp": 1783868400,
+                "flight": "LJ92",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/12 22:25",
+                "timestamp": 1783869900,
+                "flight": "7C2316",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
                 "type": "도착",
                 "time": "07/12 22:45",
                 "timestamp": 1783871100,
@@ -1067,96 +1075,48 @@ const flightInfo = {
                 "flight": "9G501",
                 "city": "홍콩",
                 "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/12 23:10",
+                "timestamp": 1783872600,
+                "flight": "9G452",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/12 23:10",
+                "timestamp": 1783872600,
+                "flight": "VJ968",
+                "city": "부산",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/12 23:59",
+                "timestamp": 1783875540,
+                "flight": "TV9781",
+                "city": "청두",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/13 01:00",
+                "timestamp": 1783879200,
+                "flight": "TV9782",
+                "city": "청두",
+                "status": "출발예정"
             }
         ],
         "DAD": [
-            {
-                "type": "출발",
-                "time": "07/11 15:15",
-                "timestamp": 1783757700,
-                "flight": "VN627",
-                "city": "방콕",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "HX548",
-                "city": "홍콩",
-                "status": "지연 (15:51)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:35",
-                "timestamp": 1783758900,
-                "flight": "AK640",
-                "city": "Kuala Lumpur",
-                "status": "도착예정 (15:29)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:55",
-                "timestamp": 1783760100,
-                "flight": "SQ174",
-                "city": "Singapore",
-                "status": "도착예정 (15:42)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:55",
-                "timestamp": 1783760100,
-                "flight": "KE458",
-                "city": "인천",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:00",
-                "timestamp": 1783760400,
-                "flight": "K6840",
-                "city": "Siem Reap",
-                "status": "도착완료"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "AK641",
-                "city": "Kuala Lumpur",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "VN432",
-                "city": "인천",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:20",
-                "timestamp": 1783761600,
-                "flight": "HX549",
-                "city": "홍콩",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:35",
-                "timestamp": 1783762500,
-                "flight": "K6841",
-                "city": "Siem Reap",
-                "status": "출발예정"
-            },
             {
                 "type": "출발",
                 "time": "07/11 16:45",
                 "timestamp": 1783763100,
                 "flight": "SQ173",
                 "city": "Singapore",
-                "status": "출발예정"
+                "status": "출발완료"
             },
             {
                 "type": "도착",
@@ -1164,7 +1124,7 @@ const flightInfo = {
                 "timestamp": 1783765500,
                 "flight": "UO558",
                 "city": "홍콩",
-                "status": "예정"
+                "status": "도착예정 (17:16)"
             },
             {
                 "type": "도착",
@@ -1172,7 +1132,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "TR518",
                 "city": "Singapore",
-                "status": "도착예정 (17:16)"
+                "status": "도착예정 (17:25)"
             },
             {
                 "type": "도착",
@@ -1180,7 +1140,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "VZ962",
                 "city": "방콕",
-                "status": "예정"
+                "status": "도착예정 (17:42)"
             },
             {
                 "type": "도착",
@@ -1188,7 +1148,7 @@ const flightInfo = {
                 "timestamp": 1783766100,
                 "flight": "QH9589",
                 "city": "마카오",
-                "status": "예정"
+                "status": "도착예정 (17:20)"
             },
             {
                 "type": "도착",
@@ -1196,7 +1156,7 @@ const flightInfo = {
                 "timestamp": 1783766400,
                 "flight": "FD638",
                 "city": "방콕",
-                "status": "예정"
+                "status": "도착예정 (17:31)"
             },
             {
                 "type": "도착",
@@ -1557,264 +1517,32 @@ const flightInfo = {
                 "flight": "Z2822",
                 "city": "Manila",
                 "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/12 08:55",
+                "timestamp": 1783821300,
+                "flight": "Z2823",
+                "city": "Manila",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/12 09:20",
+                "timestamp": 1783822800,
+                "flight": "UO552",
+                "city": "홍콩",
+                "status": "예정"
             }
         ],
         "SGN": [
-            {
-                "type": "도착",
-                "time": "07/11 15:15",
-                "timestamp": 1783757700,
-                "flight": "VJ1814",
-                "city": "Kuala Lumpur",
-                "status": "지연 (16:08)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:15",
-                "timestamp": 1783757700,
-                "flight": "VN921",
-                "city": "Phnom Penh",
-                "status": "도착완료"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "FD654",
-                "city": "방콕",
-                "status": "도착예정 (15:13)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "VJ804",
-                "city": "방콕",
-                "status": "지연 (15:38)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "QR970",
-                "city": "Phnom Penh",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "VN791",
-                "city": "Perth",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:25",
-                "timestamp": 1783758300,
-                "flight": "VN679",
-                "city": "Kuala Lumpur",
-                "status": "탑승중"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:40",
-                "timestamp": 1783759200,
-                "flight": "AK522",
-                "city": "Kuala Lumpur",
-                "status": "도착예정 (15:25)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:40",
-                "timestamp": 1783759200,
-                "flight": "MH758",
-                "city": "Kuala Lumpur",
-                "status": "도착예정 (15:34)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:40",
-                "timestamp": 1783759200,
-                "flight": "TR553",
-                "city": "Singapore",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "BR396",
-                "city": "타이베이",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:50",
-                "timestamp": 1783759800,
-                "flight": "CZ374",
-                "city": "Guangzhou",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:50",
-                "timestamp": 1783759800,
-                "flight": "SQ183",
-                "city": "Singapore",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:55",
-                "timestamp": 1783760100,
-                "flight": "FD655",
-                "city": "방콕",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:00",
-                "timestamp": 1783760400,
-                "flight": "VN621",
-                "city": "Phuket",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "VJ86",
-                "city": "Sydney",
-                "status": "지연 (16:21)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "VN920",
-                "city": "Phnom Penh",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "TK162",
-                "city": "Istanbul",
-                "status": "도착예정 (15:36)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "VJ92",
-                "city": "Perth",
-                "status": "도착예정 (15:55)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "VN604",
-                "city": "방콕",
-                "status": "도착예정 (15:59)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "VU130",
-                "city": "방콕",
-                "status": "도착예정 (15:59)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:10",
-                "timestamp": 1783761000,
-                "flight": "AK523",
-                "city": "Kuala Lumpur",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:15",
-                "timestamp": 1783761300,
-                "flight": "VN772",
-                "city": "Sydney",
-                "status": "도착예정 (15:46)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:15",
-                "timestamp": 1783761300,
-                "flight": "VN780",
-                "city": "Melbourne",
-                "status": "도착예정 (15:49)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:20",
-                "timestamp": 1783761600,
-                "flight": "CI783",
-                "city": "타이베이",
-                "status": "Canceled"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:25",
-                "timestamp": 1783761900,
-                "flight": "VJ1831",
-                "city": "Vientiane",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:30",
-                "timestamp": 1783762200,
-                "flight": "VJ882",
-                "city": "Singapore",
-                "status": "도착예정 (16:16)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:30",
-                "timestamp": 1783762200,
-                "flight": "VJ820",
-                "city": "Tokyo",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:30",
-                "timestamp": 1783762200,
-                "flight": "VN570",
-                "city": "타이베이",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:40",
-                "timestamp": 1783762800,
-                "flight": "VJ854",
-                "city": "Jakarta",
-                "status": "도착예정 (16:50)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:40",
-                "timestamp": 1783762800,
-                "flight": "MH759",
-                "city": "Kuala Lumpur",
-                "status": "출발예정"
-            },
             {
                 "type": "도착",
                 "time": "07/11 16:50",
                 "timestamp": 1783763400,
                 "flight": "VJ848",
                 "city": "Denpasar",
-                "status": "지연 (17:18)"
+                "status": "지연 (17:16)"
             },
             {
                 "type": "출발",
@@ -1822,7 +1550,7 @@ const flightInfo = {
                 "timestamp": 1783763400,
                 "flight": "VN607",
                 "city": "방콕",
-                "status": "출발예정"
+                "status": "탑승 곧 마감"
             },
             {
                 "type": "도착",
@@ -1838,7 +1566,7 @@ const flightInfo = {
                 "timestamp": 1783764000,
                 "flight": "VN657",
                 "city": "Singapore",
-                "status": "출발예정"
+                "status": "탑승 곧 마감"
             },
             {
                 "type": "도착",
@@ -1846,7 +1574,7 @@ const flightInfo = {
                 "timestamp": 1783764300,
                 "flight": "VN630",
                 "city": "Jakarta",
-                "status": "도착예정 (17:01)"
+                "status": "도착예정 (16:56)"
             },
             {
                 "type": "도착",
@@ -1854,7 +1582,7 @@ const flightInfo = {
                 "timestamp": 1783764900,
                 "flight": "TR516",
                 "city": "Singapore",
-                "status": "예정"
+                "status": "도착예정 (17:25)"
             },
             {
                 "type": "도착",
@@ -1862,7 +1590,7 @@ const flightInfo = {
                 "timestamp": 1783764900,
                 "flight": "VJ800",
                 "city": "방콕",
-                "status": "예정"
+                "status": "도착예정 (17:06)"
             },
             {
                 "type": "출발",
@@ -1870,7 +1598,7 @@ const flightInfo = {
                 "timestamp": 1783764900,
                 "flight": "VJ805",
                 "city": "방콕",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -1878,7 +1606,7 @@ const flightInfo = {
                 "timestamp": 1783764900,
                 "flight": "VN813",
                 "city": "Siem Reap",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "도착",
@@ -1886,7 +1614,7 @@ const flightInfo = {
                 "timestamp": 1783765200,
                 "flight": "CX769",
                 "city": "홍콩",
-                "status": "도착예정 (16:59)"
+                "status": "도착예정 (17:03)"
             },
             {
                 "type": "도착",
@@ -1894,7 +1622,7 @@ const flightInfo = {
                 "timestamp": 1783765200,
                 "flight": "VN503",
                 "city": "Guangzhou",
-                "status": "도착예정 (16:53)"
+                "status": "도착예정 (16:54)"
             },
             {
                 "type": "도착",
@@ -1902,7 +1630,7 @@ const flightInfo = {
                 "timestamp": 1783765500,
                 "flight": "VJ894",
                 "city": "Denpasar",
-                "status": "예정"
+                "status": "지연 (18:29)"
             },
             {
                 "type": "출발",
@@ -1910,7 +1638,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "CI784",
                 "city": "타이베이",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -1918,7 +1646,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "VJ83",
                 "city": "Brisbane",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "출발",
@@ -1950,7 +1678,7 @@ const flightInfo = {
                 "timestamp": 1783767300,
                 "flight": "9C7347",
                 "city": "Guangzhou",
-                "status": "예정"
+                "status": "도착예정 (17:46)"
             },
             {
                 "type": "도착",
@@ -1982,7 +1710,7 @@ const flightInfo = {
                 "timestamp": 1783768200,
                 "flight": "MU9633",
                 "city": "Kunming",
-                "status": "예정"
+                "status": "도착예정 (17:40)"
             },
             {
                 "type": "출발",
@@ -2014,7 +1742,7 @@ const flightInfo = {
                 "timestamp": 1783769100,
                 "flight": "SQ186",
                 "city": "Singapore",
-                "status": "예정"
+                "status": "도착예정 (18:12)"
             },
             {
                 "type": "도착",
@@ -2022,7 +1750,7 @@ const flightInfo = {
                 "timestamp": 1783769400,
                 "flight": "VN525",
                 "city": "상하이",
-                "status": "도착예정 (17:50)"
+                "status": "도착예정 (17:46)"
             },
             {
                 "type": "출발",
@@ -2054,7 +1782,7 @@ const flightInfo = {
                 "timestamp": 1783770000,
                 "flight": "VN640",
                 "city": "Denpasar",
-                "status": "예정"
+                "status": "도착예정 (18:35)"
             },
             {
                 "type": "도착",
@@ -2129,6 +1857,14 @@ const flightInfo = {
                 "status": "예정"
             },
             {
+                "type": "도착",
+                "time": "07/11 19:40",
+                "timestamp": 1783773600,
+                "flight": "LD562",
+                "city": "Penang",
+                "status": "예정"
+            },
+            {
                 "type": "출발",
                 "time": "07/11 19:40",
                 "timestamp": 1783773600,
@@ -2153,6 +1889,14 @@ const flightInfo = {
                 "status": "출발예정"
             },
             {
+                "type": "도착",
+                "time": "07/11 19:50",
+                "timestamp": 1783774200,
+                "flight": "K6824",
+                "city": "Siem Reap",
+                "status": "예정"
+            },
+            {
                 "type": "출발",
                 "time": "07/11 19:55",
                 "timestamp": 1783774500,
@@ -2161,174 +1905,166 @@ const flightInfo = {
                 "status": "출발예정"
             },
             {
+                "type": "도착",
+                "time": "07/11 20:00",
+                "timestamp": 1783774800,
+                "flight": "EK392",
+                "city": "Dubai",
+                "status": "도착예정 (20:00)"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:00",
+                "timestamp": 1783774800,
+                "flight": "TK6470",
+                "city": "Kuala Lumpur",
+                "status": "예정"
+            },
+            {
                 "type": "출발",
                 "time": "07/11 20:00",
                 "timestamp": 1783774800,
                 "flight": "QR971",
                 "city": "Doha",
                 "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:00",
+                "timestamp": 1783774800,
+                "flight": "VJ3900",
+                "city": "상하이",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:10",
+                "timestamp": 1783775400,
+                "flight": "TG557",
+                "city": "방콕",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:25",
+                "timestamp": 1783776300,
+                "flight": "VN595",
+                "city": "홍콩",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:25",
+                "timestamp": 1783776300,
+                "flight": "VN812",
+                "city": "Siem Reap",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:25",
+                "timestamp": 1783776300,
+                "flight": "K6829",
+                "city": "Siem Reap",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:30",
+                "timestamp": 1783776600,
+                "flight": "8M453",
+                "city": "Yangon",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:35",
+                "timestamp": 1783776900,
+                "flight": "VN678",
+                "city": "Kuala Lumpur",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:45",
+                "timestamp": 1783777500,
+                "flight": "VN620",
+                "city": "Phuket",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:45",
+                "timestamp": 1783777500,
+                "flight": "VN773",
+                "city": "Sydney",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:50",
+                "timestamp": 1783777800,
+                "flight": "LD562",
+                "city": "홍콩",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:00",
+                "timestamp": 1783778400,
+                "flight": "JQ63",
+                "city": "Melbourne",
+                "status": "도착예정 (21:11)"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:00",
+                "timestamp": 1783778400,
+                "flight": "LD572",
+                "city": "홍콩",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:05",
+                "timestamp": 1783778700,
+                "flight": "FD658",
+                "city": "방콕",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:25",
+                "timestamp": 1783779900,
+                "flight": "VN781",
+                "city": "Melbourne",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:35",
+                "timestamp": 1783780500,
+                "flight": "FD659",
+                "city": "방콕",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:45",
+                "timestamp": 1783781100,
+                "flight": "VJ3908",
+                "city": "Guangzhou",
+                "status": "출발예정"
             }
         ],
         "HAN": [
-            {
-                "type": "출발",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "FD871",
-                "city": "Chiang Mai",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:20",
-                "timestamp": 1783758000,
-                "flight": "K6855",
-                "city": "Phnom Penh",
-                "status": "탑승 곧 마감"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:30",
-                "timestamp": 1783758600,
-                "flight": "QV311",
-                "city": "Vientiane",
-                "status": "도착예정 (15:32)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:30",
-                "timestamp": 1783758600,
-                "flight": "VN837",
-                "city": "Siem Reap",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:30",
-                "timestamp": 1783758600,
-                "flight": "8K525",
-                "city": "홍콩",
-                "status": "탑승중"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:35",
-                "timestamp": 1783758900,
-                "flight": "VN593",
-                "city": "홍콩",
-                "status": "지연 (16:14)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:35",
-                "timestamp": 1783758900,
-                "flight": "VN660",
-                "city": "Singapore",
-                "status": "도착예정 (15:13)"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:40",
-                "timestamp": 1783759200,
-                "flight": "TK164",
-                "city": "Istanbul",
-                "status": "도착예정 (15:15)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:40",
-                "timestamp": 1783759200,
-                "flight": "MF860",
-                "city": "Xiamen",
-                "status": "탑승중"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "CZ8469",
-                "city": "Shenzhen",
-                "status": "도착예정 (15:26)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "CZ8316",
-                "city": "Guangzhou",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "MU9606",
-                "city": "Kunming",
-                "status": "탑승중"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 15:45",
-                "timestamp": 1783759500,
-                "flight": "VJ903",
-                "city": "방콕",
-                "status": "탑승중"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 15:50",
-                "timestamp": 1783759800,
-                "flight": "VJ902",
-                "city": "방콕",
-                "status": "지연 (16:10)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:00",
-                "timestamp": 1783760400,
-                "flight": "SQ195",
-                "city": "Singapore",
-                "status": "출발예정"
-            },
-            {
-                "type": "도착",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "VU136",
-                "city": "방콕",
-                "status": "도착예정 (15:53)"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:05",
-                "timestamp": 1783760700,
-                "flight": "VN619",
-                "city": "방콕",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:20",
-                "timestamp": 1783761600,
-                "flight": "QV312",
-                "city": "Vientiane",
-                "status": "출발예정"
-            },
-            {
-                "type": "출발",
-                "time": "07/11 16:20",
-                "timestamp": 1783761600,
-                "flight": "VJ913",
-                "city": "Siem Reap",
-                "status": "출발예정"
-            },
             {
                 "type": "출발",
                 "time": "07/11 16:45",
                 "timestamp": 1783763100,
                 "flight": "CZ8470",
                 "city": "Shenzhen",
-                "status": "출발예정"
+                "status": "출발완료"
             },
             {
                 "type": "도착",
@@ -2368,7 +2104,7 @@ const flightInfo = {
                 "timestamp": 1783763700,
                 "flight": "VU8632",
                 "city": "Lanzhou",
-                "status": "출발예정"
+                "status": "탑승 곧 마감"
             },
             {
                 "type": "도착",
@@ -2376,7 +2112,7 @@ const flightInfo = {
                 "timestamp": 1783764600,
                 "flight": "TK6202",
                 "city": "Riyadh",
-                "status": "지연 (17:27)"
+                "status": "지연 (17:40)"
             },
             {
                 "type": "출발",
@@ -2384,7 +2120,7 @@ const flightInfo = {
                 "timestamp": 1783765200,
                 "flight": "VN578",
                 "city": "타이베이",
-                "status": "출발예정"
+                "status": "탑승중"
             },
             {
                 "type": "도착",
@@ -2392,7 +2128,7 @@ const flightInfo = {
                 "timestamp": 1783765500,
                 "flight": "PN6423",
                 "city": "Chongqing",
-                "status": "예정"
+                "status": "도착예정 (17:20)"
             },
             {
                 "type": "도착",
@@ -2400,7 +2136,7 @@ const flightInfo = {
                 "timestamp": 1783765500,
                 "flight": "VJ916",
                 "city": "Singapore",
-                "status": "도착예정 (17:03)"
+                "status": "도착예정 (16:59)"
             },
             {
                 "type": "도착",
@@ -2408,7 +2144,7 @@ const flightInfo = {
                 "timestamp": 1783765500,
                 "flight": "ZH105",
                 "city": "Shenzhen",
-                "status": "예정"
+                "status": "도착예정 (16:58)"
             },
             {
                 "type": "도착",
@@ -2416,7 +2152,7 @@ const flightInfo = {
                 "timestamp": 1783765800,
                 "flight": "VN507",
                 "city": "Guangzhou",
-                "status": "예정"
+                "status": "도착예정 (17:09)"
             },
             {
                 "type": "도착",
@@ -2424,7 +2160,7 @@ const flightInfo = {
                 "timestamp": 1783766400,
                 "flight": "SQ194",
                 "city": "Singapore",
-                "status": "도착예정 (17:33)"
+                "status": "도착예정 (17:31)"
             },
             {
                 "type": "도착",
@@ -2432,7 +2168,7 @@ const flightInfo = {
                 "timestamp": 1783766700,
                 "flight": "MU6013",
                 "city": "상하이",
-                "status": "예정"
+                "status": "Canceled"
             },
             {
                 "type": "도착",
@@ -2464,7 +2200,7 @@ const flightInfo = {
                 "timestamp": 1783767300,
                 "flight": "VN614",
                 "city": "방콕",
-                "status": "예정"
+                "status": "지연 (18:12)"
             },
             {
                 "type": "출발",
@@ -2480,7 +2216,7 @@ const flightInfo = {
                 "timestamp": 1783768200,
                 "flight": "CX743",
                 "city": "홍콩",
-                "status": "예정"
+                "status": "도착예정 (18:03)"
             },
             {
                 "type": "도착",
@@ -2488,7 +2224,7 @@ const flightInfo = {
                 "timestamp": 1783768500,
                 "flight": "VJ928",
                 "city": "Jakarta",
-                "status": "지연 (18:58)"
+                "status": "지연 (18:50)"
             },
             {
                 "type": "출발",
@@ -2520,7 +2256,7 @@ const flightInfo = {
                 "timestamp": 1783768800,
                 "flight": "VN662",
                 "city": "Singapore",
-                "status": "예정"
+                "status": "도착예정 (18:16)"
             },
             {
                 "type": "도착",
@@ -2528,7 +2264,7 @@ const flightInfo = {
                 "timestamp": 1783769100,
                 "flight": "VN533",
                 "city": "상하이",
-                "status": "도착예정 (17:54)"
+                "status": "도착예정 (17:42)"
             },
             {
                 "type": "출발",
@@ -2552,7 +2288,7 @@ const flightInfo = {
                 "timestamp": 1783769400,
                 "flight": "VJ931",
                 "city": "Osaka",
-                "status": "도착예정 (18:41)"
+                "status": "도착예정 (18:26)"
             },
             {
                 "type": "출발",
@@ -2568,7 +2304,7 @@ const flightInfo = {
                 "timestamp": 1783769700,
                 "flight": "6E1631",
                 "city": "Kolkata",
-                "status": "예정"
+                "status": "도착예정 (18:39)"
             },
             {
                 "type": "도착",
@@ -2576,7 +2312,7 @@ const flightInfo = {
                 "timestamp": 1783770000,
                 "flight": "CZ8177",
                 "city": "Guangzhou",
-                "status": "예정"
+                "status": "도착예정 (18:03)"
             },
             {
                 "type": "도착",
@@ -2584,7 +2320,7 @@ const flightInfo = {
                 "timestamp": 1783770000,
                 "flight": "VN513",
                 "city": "Beijing",
-                "status": "예정"
+                "status": "지연 (19:37)"
             },
             {
                 "type": "출발",
@@ -2616,7 +2352,7 @@ const flightInfo = {
                 "timestamp": 1783771140,
                 "flight": "3S738",
                 "city": "Leipzig",
-                "status": "도착예정 (19:07)"
+                "status": "지연 (19:16)"
             },
             {
                 "type": "도착",
@@ -2699,6 +2435,14 @@ const flightInfo = {
                 "status": "예정"
             },
             {
+                "type": "도착",
+                "time": "07/11 19:50",
+                "timestamp": 1783774200,
+                "flight": "VN836",
+                "city": "Siem Reap",
+                "status": "예정"
+            },
+            {
                 "type": "출발",
                 "time": "07/11 19:50",
                 "timestamp": 1783774200,
@@ -2729,6 +2473,206 @@ const flightInfo = {
                 "flight": "VN635",
                 "city": "Jakarta",
                 "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:05",
+                "timestamp": 1783775100,
+                "flight": "CZ8359",
+                "city": "Changsha",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:05",
+                "timestamp": 1783775100,
+                "flight": "VN385",
+                "city": "Tokyo",
+                "status": "도착예정 (19:54)"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:20",
+                "timestamp": 1783776000,
+                "flight": "FD644",
+                "city": "방콕",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:25",
+                "timestamp": 1783776300,
+                "flight": "VJ904",
+                "city": "방콕",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:30",
+                "timestamp": 1783776600,
+                "flight": "RH318",
+                "city": "홍콩",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:35",
+                "timestamp": 1783776900,
+                "flight": "VJ947",
+                "city": "가오슝",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:35",
+                "timestamp": 1783776900,
+                "flight": "VN415",
+                "city": "인천",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:40",
+                "timestamp": 1783777200,
+                "flight": "CK288",
+                "city": "상하이",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:40",
+                "timestamp": 1783777200,
+                "flight": "EY431",
+                "city": "Abu Dhabi",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:45",
+                "timestamp": 1783777500,
+                "flight": "TG565",
+                "city": "방콕",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:50",
+                "timestamp": 1783777800,
+                "flight": "VJ914",
+                "city": "Siem Reap",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 20:55",
+                "timestamp": 1783778100,
+                "flight": "VJ943",
+                "city": "타이베이",
+                "status": "Canceled"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:55",
+                "timestamp": 1783778100,
+                "flight": "FD645",
+                "city": "방콕",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 20:55",
+                "timestamp": 1783778100,
+                "flight": "KE362",
+                "city": "인천",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:05",
+                "timestamp": 1783778700,
+                "flight": "VN618",
+                "city": "방콕",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:10",
+                "timestamp": 1783779000,
+                "flight": "CX48",
+                "city": "Dhaka",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:10",
+                "timestamp": 1783779000,
+                "flight": "CZ8360",
+                "city": "Changsha",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:10",
+                "timestamp": 1783779000,
+                "flight": "ET3729",
+                "city": "Addis Ababa",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 21:15",
+                "timestamp": 1783779300,
+                "flight": "VJ7238",
+                "city": "상하이",
+                "status": "출발예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:20",
+                "timestamp": 1783779600,
+                "flight": "VN786",
+                "city": "Sydney",
+                "status": "도착예정 (21:09)"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:35",
+                "timestamp": 1783780500,
+                "flight": "KE447",
+                "city": "인천",
+                "status": "예정"
+            },
+            {
+                "type": "도착",
+                "time": "07/11 21:35",
+                "timestamp": 1783780500,
+                "flight": "VJ998",
+                "city": "Denpasar",
+                "status": "예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 22:30",
+                "timestamp": 1783783800,
+                "flight": "VJ7526",
+                "city": "Guangzhou",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 22:30",
+                "timestamp": 1783783800,
+                "flight": "8K525",
+                "city": "홍콩",
+                "status": "출발예정"
+            },
+            {
+                "type": "출발",
+                "time": "07/11 22:40",
+                "timestamp": 1783784400,
+                "flight": "CX48",
+                "city": "홍콩",
+                "status": "출발예정"
             }
         ],
         "HPH": [
@@ -2738,7 +2682,7 @@ const flightInfo = {
                 "timestamp": 1783765200,
                 "flight": "ZH129",
                 "city": "Guangzhou",
-                "status": "예정"
+                "status": "도착예정 (16:41)"
             },
             {
                 "type": "출발",
